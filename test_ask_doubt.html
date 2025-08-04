@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Doubts</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a black and white theme */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 20px;
+        }
+
+        header {
+            text-align: center;;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #fff;
+            background-color: #000;
+            color: #fff;
+            align-items: center;
+        }
+        /* #question {height: 50px; width:700px; align-items: center; padding-right:80px} */
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #fff;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        /* Style the button on hover */
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .doubts {
+            padding-top:430px
+        }
+        header {
+            background: linear-gradient(135deg, #000, #444); /* Gradient background from black to dark gray */
+        } 
+        
+
+
+        
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a class="logo" href="user_portal.html"><img src="Screenshot 2023-10-27 125530.png" alt="Your Logo"></a>
+
+            </nav>
+
+        </header>
+        
+
+        <main>
+            <div class="doubts"><form>
+                <label for="question">Your Question:</label>
+                <textarea  id="question" name="question" rows="4" placeholder="Ask your doubts here..."></textarea>
+                <button type="submit">Submit
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                      </svg>
+                </button>
+            </form></div>
+            
+        </main>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

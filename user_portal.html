@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Your Tutoring Portal</title>
+    <link rel="icon" type="image/x-icon" href="H.png">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .user-dashboard {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .user-profile img {
+            align-self: center;
+
+        }
+
+        .user-profile h3 {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .tabs ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .tabs ul :hover{
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .tabs li {
+            padding: 10px 20px;
+            background-color: black;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tabs li :hover{
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        /* Styling for individual tabs */
+        #courses {
+            display: block;
+        }
+
+        .course {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .course h4 {
+            font-size: 20px;
+            color: #000;
+            
+        }
+
+        .course p {
+            color: #333;
+        }
+
+        .course a {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    .progress-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #ccc;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+.progress {
+    height: 100%;
+    background-color: black; /* Blue progress bar color */
+    border-radius: 5px;
+    width: 75%; /* Adjust the width to represent the completion status */
+}
+.progress2{
+    height: 100%;
+    background-color: black; /* Blue progress bar color */
+    border-radius: 5px;
+    width: 95%; /* Adjust the width to represent the completion status */
+}
+.sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .menu-btn {
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            margin: 20px;
+            transition: 0.3s;
+            color: black;
+        }
+        .container {
+            display: flex;
+        }
+
+        .content {
+            padding: 20px;
+            margin-left: 250px;
+        }
+        footer {
+            background: black;
+            text-align: center;
+            padding: 10px;
+            color: #fff; /* White text */
+        }
+     
+    </style>
+</head>
+<body>
+    <!-- Header-->
+    <div class="menu-btn" onclick="toggleMenu()">&#9776; </div>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <a href="#">Buy Courses</a>
+            <a href="#">Gift Someone</a>
+            <a href="#">User Settings</a>
+            <a href="#">Talk to Community</a>
+            <a href="article.html">Articles</a>
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+    <!-- User Dashboard Section -->
+    <section class="user-dashboard">
+        <div class="user-profile">
+            <a href="index.html"><img src="Screenshot 2023-10-27 125530.png" alt="User Profile"></a>
+            <h3>Welcome, HedgeHead!</h3>
+        </div>
+        <div class="tabs">
+            <ul>
+                <li><a href="#courses">Info About Courses</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+                <li><a href="sim.html">Simulators</a></li>
+                <li><a href="ask_doubt.html">Ask Doubt</a></li>
+            </ul>
+        </div>
+    
+        <section class="user-dashboard">
+        <div class="tab-content" id="courses">
+    
+            <div class="course">
+                <h4>Mutual Funds</h4>
+                <p>You are currently studying about Mutual Funds in this cource</p>
+                <div class="progress" style="width: 75%;"></div>
+                    <span class="progress-text">75% Complete</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+        <div class "tab-content" id="competitions">
+<!-- Display competition information -->
+            <div class="competition">
+                <h4>Assignments</h4>
+                <div class="progress2" style="width: 75%;"></div>
+                    <span class="progress-text">95% Complete</span>
+                <div class="progress-bar">
+                    <div class="progress2"></div>
+                </div>
+                <br>
+                <a href="#"><span style="color: white; background-color: black; padding: 10px;padding-top: 15px;padding-bottom: 15px; margin: 10px; border-radius: 15px;">Complete Now</span></a>
+                
+            </div>
+        </div>
+        <div class="tab-content" id="simulators">
+        </div>
+        <div class="tab-content" id="ask-doubt">
+            
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+
+    <!-- Footer  -->
+    <footer>
+        <p>© 2023 HEDGE. All Copyrights are reserved</p>
+    </footer>
+</body>
+</html>

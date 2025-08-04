@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Your Tutoring Portal</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .user-dashboard {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .user-profile img {
+            align-self: center;
+
+        }
+        p{
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .user-profile h3 {
+            font-size: 24px;
+            color: #000;
+        }
+
+        
+
+        /* Styling for individual tabs */
+        #courses {
+            display: block;
+        }
+
+        .course {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .course h4 {
+            font-size: 20px;
+            color: #000;
+            
+        }
+
+        .course p {
+            color: #333;
+        }
+
+        .course a {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    
+.sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .menu-btn {
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+            margin: 20px;
+            transition: 0.3s;
+            color: black;
+        }
+        .container {
+            display: flex;
+        }
+
+        .content {
+            padding: 20px;
+            margin-left: 250px;
+        }
+        footer {
+            background: black;
+            text-align: center;
+            padding: 10px;
+            color: #fff; /* White text */
+        }
+     
+    </style>
+</head>
+<body>
+    <!-- Header (You can reuse the header from the previous template) -->
+    <div class="menu-btn" onclick="toggleMenu()">&#9776; </div>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <a href="user_portal.html">Home</a>
+            <a href="#">Buy Courses</a>
+            <a href="#">Gift Someone</a>
+            <a href="#">User Settings</a>
+            <a href="#">Talk to Community</a>
+            <a href="article.html">Articles</a>
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- User Dashboard Section -->
+    <section class="user-dashboard">
+        
+    
+        <section class="user-dashboard">
+        <div class="tab-content" id="courses">
+    
+            <div class="course">
+                <h4>Articles</h4>
+            </div>
+        </div>
+    </section>
+        </div>
+        <div class "tab-content" id="competitions">
+<!-- Display competition information -->
+            <div class="competition">
+                <h4 style="font-size: 40px;">Stocks</h4>
+                <div class="progress2" style="width: 75%;"></div>
+                    
+                <p>
+                    Stocks and shares are key components of the financial markets, helpingfor individuals and organizations to invest in and own a portion of companies. They represent ownership in a company. Stocks are issued by companies to raise capital. Investors who purchase stocks become shareholders, with a stake in the company's profits and losses.
+                    Shares are typically divided into two main categories: common and preferred stock. Common stockholders have voting rights in the company and may receive dividends, while preferred stockholders have a higher claim on company assets but usually do not have voting rights. Both types of shares can be bought and sold on various stock exchanges such as Vanguard, Zerodha.
+                    Stock markets, such as the New York Stock Exchange (NYSE) and NASDAQ, facilitate the trading of shares. Investors can profit from stocks through the increase in share value and dividend payments. However, stock prices can be, influenced by factors like company performance, economic conditions, and market conditions.
+                    Diversification is a strategy to reduce risk by holding a variety of stocks in a portfolio. Additionally, many investors turn to professional brokers or financial advisors to navigate the complexities of stock trading. Understanding stocks and shares is essential for anyone looking to participate in the dynamic world of financial markets and can be a great way to make money in the long term. 
+                    Popular investors are Warren Buffet, Benjamin Franklin, Rakesh Jhunjhunwala
+
+
+                </p>
+                    
+                
+            </div>
+        </div>
+        <div class="tab-content" id="simulators">
+        </div>
+        <div class="tab-content" id="ask-doubt">
+            
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
+
+    <!-- Footer  -->
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

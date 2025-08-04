@@ -1,0 +1,243 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff; /* White background */
+        color: #000; /* Black text */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header Styling */
+    header {
+        background: linear-gradient(135deg, #000, #444); /* Gradient background from black to dark gray */
+    }
+
+    .navbar {
+        background-color: #fff; /* White background for the navigation bar */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10 px 500px;
+        color: #000; /* Black text */
+    }
+
+    .container1
+
+
+    .logo img {
+        max-height: 40px; /* Adjust the height as needed */
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .login {
+
+        padding-left: 100px;
+    }
+    .signup {
+        padding-left: 30px;
+        font-size: 70px;
+    }
+    .heading {
+        align-items: center;
+        font-size: 70px;
+        margin-left: 420px;
+        padding-left: 30px;
+    }
+
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        
+    }
+    header {
+        background: linear-gradient(135deg, #000, #444); /* Gradient background from black to dark gray */
+    }
+
+    .navbar {
+        background-color: #fff; /* White background for the navigation bar */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: #000; /* Black text */
+    }
+
+    .logo img {
+        max-height: 40px; /* Adjust the height as needed */
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #000;
+        transition: color 0.3s, background-color 0.3s; /* Add transitions for color and background-color */
+        padding: 14px 16px;
+        border-radius: 4px; /* Add rounded corners for the buttons */
+    }
+
+    .nav-links a:hover {
+        color: #fff; /* Change text color to white on hover */
+        background-color: #000; /* Change background color to black on hover */
+    }
+
+    .container {
+        width: 400px;
+        height:450px;
+        margin: 0 auto;
+        margin-top: 90 px;
+        padding: 50px;
+        padding-left:26px;
+        padding-top: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-top: 100px;
+        margin-right: 150px;
+    }
+
+    .logo img {
+        max-height: 40px; /* Adjust the height as needed */
+    }
+
+    .container1 {
+        width: 400px;
+        height:850px;
+        margin: 0 auto;
+        
+        margin-right: 150px;
+        color: #000;
+        padding: 50px;
+        padding-left:25px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+
+    .sidebyside {
+        display: flex; /* Use flexbox to create a horizontal layout */
+    }
+    
+    .name, .age {
+        flex: 1; /* Distribute the available space equally between the two divs */
+        margin: 10px; /* Add some spacing between the divs */
+        padding: 10px; /* Add padding for content inside the divs */
+        /* Add a border for visibility */
+    }
+
+    .login {
+        color:black;
+        font-size: 70px;
+        padding-top: 0%;
+    }
+
+
+    .user {
+        color:#000
+    }
+    .form-group {
+        margin: 10px 0;
+        padding-top:30px;
+        
+    }
+
+    .form-button input[type="submit"] {
+        background-color:white;
+                color: black;
+                padding: 20px;
+                margin-top: 50px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+    }
+
+    .form-button input[type="submit"]:hover {
+        background-color: black;
+        color: white;
+    }
+
+    label {
+        display: block;
+    }
+
+    .passw {
+        color:#000
+    }
+
+    .body {
+        background-color: #000;
+    }
+
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #333;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #000;
+        transition: color 0.3s, background-color 0.3s; /* Add transitions for color and background-color */
+        padding: 14px 16px;
+        border-radius: 4px; /* Add rounded corners for the buttons */
+    }
+
+    .nav-links a:hover {
+        color: #fff; /* Change text color to white on hover */
+        background-color: #000; /* Change background color to black on hover */
+    }
+
+
+    /* Menu Styling */
+    .menu {
+        background-color: #000; /* Black background */
+        color: #fff; /* White text */
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+        background: linear-gradient(135deg, #000, #444); /* Gradient background for footer */
+        text-align: center;
+        padding: 10px;
+        color: #fff; /* White text */
+    }
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+

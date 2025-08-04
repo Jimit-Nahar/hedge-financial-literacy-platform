@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="H.png">
+
+    <title>Stock Trading Company</title>
+    <style>
+        /* CSS styles for black and white theme */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #000, #444); /* Gradient background from black to dark gray */
+        }
+
+        .navbar {
+            background-color: #fff; /* White background for the navigation bar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #000; /* Black text */
+        }
+
+        .logo img {
+            max-height: 40px; /* Adjust the height as needed */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s, background-color 0.3s; /* Add transitions for color and background-color */
+            padding: 14px 16px;
+            border-radius: 4px; /* Add rounded corners for the buttons */
+        }
+
+        .nav-links a:hover {
+            color: #fff; /* Change text color to white on hover */
+            background-color: #000; /* Change background color to black on hover */
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        a {
+            color: #0074b2;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        /* Additional styles for stock chart, buttons, and account info */
+        #stock-charts {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        #buy-sell {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        #buy-button,
+        #sell-button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        
+        #buy-button:hover {
+            background-color: #00b34a;
+        }
+        
+        #sell-button:hover {
+            background-color: #ff0000;
+        }
+        
+        #account-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        #account-value,
+        #available-money {
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Style for the graph lines */
+        #stock-chart {
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html"><img src="Screenshot 2023-10-27 125530.png" alt="Your Logo"></a>
+            <ul class="nav-links">
+                <li><a href="user_portal.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <h1>.</h1>
+    </header>
+
+    <section id="home">
+        <h2>Stock Trading Simulators</h2>
+
+    </section>
+
+    <section id="home">
+        <h2>Apple Inc</h2>
+        <p>AAPL</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California. As of March 2023, Apple is the world's biggest company by market capitalization, and with US$394.3 billion the largest technology company by 2022 revenue.</p>
+        <a href="#">Click for fundamentals</a>
+    </section>
+
+    <section id="services">
+        <h2>Trade Here</h2>
+
+        <div id="stock-charts">
+            <canvas id="stock-chart" width="400" height="200"></canvas>
+        </div>
+
+        <div id="buy-sell">
+            <button id="buy-button">Buy</button>
+            <button id="sell-button">Sell</button>
+        </div>
+        
+        <div id="account-info">
+            <p>Account Value: $<span id="account-value">100,000</span></p>
+            <p>Available Money: $<span id="available-money">10,000</span></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>!WARNING!</h2>
+        <p>Use your own knowledge to place trades.</p>
+    </section>
+    
+    <footer>
+        <p style="color: white;">© 2023 HEDGE. All Copyrights are reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // JavaScript code for chart and button interactions
+        const ctx = document.getElementById('stock-chart').getContext('2d');
+
+        const stockData = {
+            labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'],
+            datasets: [{
+                label: 'Stock Price',
+                data: [50, 60, 40, 45, 70],
+                borderColor: '#000',
+                backgroundColor: 'rgba(0, 0, 0, 0.2)',
+            }]
+        };
+
+        const stockChart = new Chart(ctx, {
+            type: 'line',
+            data: stockData,
+        });
+
+        document.getElementById('buy-button').addEventListener('click', () => {
+            // Handle the buy action here
+        });
+
+        document.getElementById('sell-button').addEventListener('click', () => {
+            // Handle the sell action here
+        });
+    </script>
+    
+</body>
+</html>
